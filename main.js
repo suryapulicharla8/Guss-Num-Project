@@ -6,7 +6,7 @@ function reloadgame(){
     document.querySelector('.score').textContent=20
     document.querySelector('#sc').textContent="Start guessing..."
     document.body.style.backgroundColor="#222";
-    document.querySelector('.number').style.height="12rem"
+    document.querySelector('.number').style.height="10rem"
     document.querySelector('.number').textContent="?";
      randomnumber = generateRandomInteger(20);
 }
@@ -20,6 +20,8 @@ function generateRandomInteger(max) {
   function maincheck(){
           
        let inputnumber= document.querySelector('#guessid').value
+
+
     //    let changvalue=document.querySelector('.score').textContent
 
     if(initialscore!==0){
@@ -54,3 +56,63 @@ function generateRandomInteger(max) {
     }
        
    }
+
+// let initialscore=20;
+// let highscore=null;
+// let randomnumber=generateRandomInteger(20);
+// function reloadgame(){
+//     document.getElementById("guessid").value='';
+
+//     document.querySelector('.score').textContent=20;
+
+//     document.querySelector("#sc").textContent='Start guessing...'
+
+//     document.querySelector('.number').style.height="12rem";
+
+//     document.querySelector(".number").textContent="?";
+
+//     randomnumber=generateRandomInteger(max); {
+//         return Math.floor(Math.random() * maax)+1;
+//     }
+//     function maincheck(){
+//         let inputnumber=document.querySelector("#guessid").value;
+
+//         if(initialscore!==0){
+//             if(inputnumber>randomnumber){
+//                 document.querySelector('.message').textContent="Your guess is high"
+//                 initialscore--
+
+//                 document.querySelector('.score').textContent=initialscore
+//             }else if(inputnumber<randomnumber){
+//                 document.querySelector(".message").textContent="your guese is low"
+//                 initialscore--
+
+//                 document.querySelector('.score').textContent=initialscore
+//             }else{
+//                 document.querySelector('.message').textContent="Hurry you won";
+
+//                 document.body.style.backgroundColor="green";
+//                 initialscore--
+
+//                 document.querySelector('.score').textContent=initialscore;
+
+//                 document.querySelector('.number').textContent=randomnumber;
+
+//                 document.querySelector('.number').style.height="12rem"
+
+//                 highscore=initialscore;
+
+//                 document.querySelector('.highscore').textContent=highscore;
+
+//                 document.querySelector('.check').style.visibility="hidden"
+//             }
+//         }else{
+//             document.querySelector(".message").textContent="Game over your score is 0"
+//         }
+
+
+//     }
+
+
+
+// }
